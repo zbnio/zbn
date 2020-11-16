@@ -1,0 +1,41 @@
+{
+  "name": "SSH Client",
+  "version": "0.1",
+  "description": "SSH客户端",
+  "type": "通用",
+  "action": [
+    {
+      "name": "链接服务器并执行",
+      "func": "zbn_ssh"
+    }
+  ],
+  "args": {
+    "zbn_ssh": [
+      {
+        "key": "target",
+        "type": "string",
+        "required": true
+      },
+      {
+        "key": "port",
+        "type": "string",
+        "required": true
+      },
+      {
+        "key": "command_str",
+        "type": "string",
+        "required": true
+      },
+      {
+        "key": "user",
+        "type": "string",
+        "required": true
+      },
+      {
+        "key": "passwd",
+        "type": "string",
+        "required": true
+      }
+    ]
+  }
+}
