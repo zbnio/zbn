@@ -1,0 +1,51 @@
+{
+  "name": "Jira",
+  "version": "0.1",
+  "description": "Jira相关操作",
+  "type": "工单",
+  "action": [
+    {
+      "name": "创建问题",
+      "func": "create_issue"
+    }
+  ],
+  "args": {
+    "create_issue": [
+      {
+        "key": "server",
+        "type": "string",
+        "required": true
+      },
+      {
+        "key": "user",
+        "type": "string",
+        "required": true
+      },
+      {
+        "key": "passwd",
+        "type": "string",
+        "required": true
+      },
+      {
+        "key": "project_name",
+        "type": "string",
+        "required": true
+      },
+      {
+        "key": "summary",
+        "type": "string",
+        "required": true
+      },
+      {
+        "key": "desc",
+        "type": "string",
+        "required": true
+      },
+      {
+        "key": "types",
+        "type": "string",
+        "required": true
+      }
+    ]
+  }
+}

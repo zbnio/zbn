@@ -1,0 +1,26 @@
+{
+  "name": "钉钉通知",
+  "version": "0.1",
+  "description": "钉钉消息通知",
+  "type": "通知",
+  "action": [
+    {
+      "name": "钉钉通知",
+      "func": "send"
+    }
+  ],
+  "args": {
+    "send": [
+      {
+        "key": "access_token",
+        "type": "string",
+        "required": true
+      },
+      {
+        "key": "text",
+        "type": "string",
+        "required": true
+      }
+    ]
+  }
+}

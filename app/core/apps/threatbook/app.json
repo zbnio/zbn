@@ -1,0 +1,26 @@
+{
+  "name": "ThreatBook",
+  "version": "0.1",
+  "description": "微步在线威胁情报查询",
+  "type": "威胁情报",
+  "action": [
+    {
+      "name": "IP信誉分析",
+      "func": "ipXinyu"
+    }
+  ],
+  "args": {
+    "ipXinyu": [
+      {
+        "key": "api_key",
+        "type": "string",
+        "required": true
+      },
+      {
+        "key": "ip",
+        "type": "string",
+        "required": true
+      }
+    ]
+  }
+}

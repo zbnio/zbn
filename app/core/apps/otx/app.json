@@ -1,0 +1,31 @@
+{
+  "name": "OTX",
+  "version": "0.1",
+  "description": "OTX 威胁情报查询",
+  "type": "威胁情报",
+  "action": [
+    {
+      "name": "威胁情报匹配",
+      "func": "otx_is"
+    }
+  ],
+  "args": {
+    "otx_is": [
+      {
+        "key": "api_key",
+        "type": "string",
+        "required": true
+      },
+      {
+        "key": "pulse_id",
+        "type": "string",
+        "required": true
+      },
+      {
+        "key": "ioc",
+        "type": "string",
+        "required": true
+      }
+    ]
+  }
+}

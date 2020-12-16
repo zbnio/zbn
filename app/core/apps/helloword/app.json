@@ -1,0 +1,21 @@
+{
+  "name": "Hello Word",
+  "version": "0.1",
+  "description": "第一个自动化 ZBN APP",
+  "type": "基本应用",
+  "action": [
+    {
+      "name": "HellWord",
+      "func": "hello_word"
+    }
+  ],
+  "args": {
+    "hello_word": [
+      {
+        "key": "name",
+        "type": "string",
+        "required": true
+      }
+    ]
+  }
+}

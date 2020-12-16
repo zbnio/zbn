@@ -1,0 +1,46 @@
+{
+  "name": "ES",
+  "version": "0.1",
+  "description": "Elasticsearch查询",
+  "type": "数据库",
+  "action": [
+    {
+      "name": "查询数据",
+      "func": "zbn_es"
+    }
+  ],
+  "args": {
+    "zbn_es": [
+      {
+        "key": "ip",
+        "type": "string",
+        "required": true
+      },
+      {
+        "key": "port",
+        "type": "string",
+        "required": true
+      },
+      {
+        "key": "index",
+        "type": "string",
+        "required": true
+      },
+      {
+        "key": "query_str",
+        "type": "string",
+        "required": true
+      },
+      {
+        "key": "user",
+        "type": "string",
+        "required": true
+      },
+      {
+        "key": "passwd",
+        "type": "string",
+        "required": true
+      }
+    ]
+  }
+}
